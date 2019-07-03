@@ -2,6 +2,4 @@
 
 touch /var/healthy
 
-/bin/app
-
-#supervisord
+supervisord -c /etc/supervisor.d/supervisord.ini
