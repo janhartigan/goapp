@@ -5,8 +5,8 @@ WORKDIR $GOPATH/src/app
 COPY . .
 COPY docker/start.sh /bin/original_start.sh
 
+# Turn on Go 1.11 Modules and build
 ENV GO111MODULE=on
-
 RUN go build -o /bin/app
 
 # Set up start script
